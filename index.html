@@ -39,7 +39,7 @@
 /* The front door: it only carries the icon and opens the app. It holds no data.
    First visit: shows the steps and quietly marks the address, so the icon saved to the Home Screen goes straight to the app.
    Until the lock is on, APP_URL is test page A (no data); the real app link goes in only after the lock. */
-var APP_URL = 'https://script.google.com/macros/s/AKfycbxzyeJSNZ3QH_ekPMO9wz36fUlJNb_6LfT7gz2OeV5lRL_5u-fChBN14ybbpyF6HHva/exec';
+var APP_URL = 'app/';
 var fromIcon = new URLSearchParams(location.search).get('from') === 'icon';
 var standalone = window.navigator.standalone === true || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
 if (fromIcon || standalone) {
